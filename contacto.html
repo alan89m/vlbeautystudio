@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html"><img src="images/logo-vr.png" alt="logo v r Beauty" class="logo"></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="show-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="/index.html">Inicio</a>
+            <a href="/contacto.html">Contacto</a>
+            <a href="/lashista.html">Lashista/Cejas y pestañas</a>
+            <a href="/nails-uñas.html">Nails/Uñas</a>
+            <a href="/tienda2da.html">Tienda</a>
+            <label for="check"  class="hide-menu">&#215</label>
+        </nav>
+    </header>
+    <form action="enviar.php" class="formulario"  method="post">
+     <div>  
+      <h2 align="center">Contáctanos</h2>  
+      <fieldset class="borde">
+        <br>
+      <input type="text" name="Nombre" placeholder="Nombre" required>
+      <input type="text" name="Email" placeholder="Email" required>
+      <input type="text" name="Celular" placeholder="Celular">
+      <h5>Motivo del contacto:</h5>
+      <input type="checkbox" name="opcion" value="1"> Cejas <br>
+      <input type="checkbox" name="opcion" value="2"> Pestañas <br>
+      <input type="checkbox" name="opcion" value="3"> Uñas <br>
+      <input type="checkbox" name="opcion" value="4"> tienda con oportunidad <br><br>
+      <textarea name="Comentario" rows="5" cols="50" placeholder="Escriba aquí su consulta" required></textarea><br>
+      <input type="submit" value="Enviar" id="boton">
+    </fieldset>
+    </div></form>
+    <footer class="footer">
+
+        <p class="copy">&copy Copyright VR Beauty Studio - 2015</p>
+        <p class="copy">CONTACTO</p>
+        <br>
+        <section class="container-contacto">
+    
+            <div class="contacto">
+                <a href="https://api.whatsapp.com/send?phone=541133083308&text=Hola"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="40"></a>     
+            </div>
+            <div class="contacto">
+            <a href="mailto:alan.89m@hotmail.com"><img src="https://cdn-icons-png.flaticon.com/128/3178/3178283.png" width="40"></a>                   
+            </div>
+            <div class="contacto">
+                <a href="https://www.instagram.com/bellezadecejas/"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" width="40"></a>
+            </div>
+        </section>
+    
+    </footer>
+    <script src="contacto.js">
+
+    </script>
+</body>
+
+</html>

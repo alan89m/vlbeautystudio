@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "header header header header header header"
+        /* MAQUETACION GRID DE 6X6, TENER EN CTA*/
+        "area1    area1    area1    area1    area1    area1"
+        "area2 area2 area2 area2 area2 us-cont"
+        "area3 area3 area3 area3 area3 area3"
+        "area4   area4   area4  area4   area4  area4"
+        "footer footer footer footer footer footer";
+}
+.area1{
+    grid-area: area1;
+}
+.area2{
+    grid-area: area2;
+    margin: 5%;
+}
+.area2, video{
+    margin: auto auto;
+}
+.area2 video{
+    position: relative;
+    align-content: center;
+ 
+}
+.area3{
+    grid-area: area3;
+}
+.area4{
+    grid-area: area4;
+
+}
